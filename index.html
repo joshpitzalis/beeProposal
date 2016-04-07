@@ -1,219 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-
+    <title>Beeminder</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css" />
+  </head>
 
-    <!-- nunito font -->
-    <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+  <body>
 
-</head>
-
-<body>
-
-    <section class="jumbotron">
-        <div class="overlay">
-            <div class="container">
-                <div class='row'>
-                    <div class='col-xs-12'>
-
-                        <h1>
-                            <img src='./img/logo.png' alt='Fresh Lime Coder' />
-                            <br/>
-                            <br/>Project Name</h1>
-                        <br/>
-                        <br/>
-                        <h5>Client Name
-                            <br/>
-                            <span class="octicon octicon-primitive-dot"></span>
-                            <br/>Date</h5>
-
-                        <br/>
-                    </div>
-                </div>
+    <section class="panel">
+      <div class="overlay">
+        <div class="container">
+          <div class='row'>
+            <div class='col-xs-12'>
+              <h1>
+                <img src='./img/bee.png' alt='Beeminder' />
+                <br/>
+                <br/>Beeminder Reimagined</h1>
+              <br/>
+              <br/>
+              <h5>8th April 2016</h5>
+              <br/>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class='content'>
-        <div class="container">
-            <div class='row'>
-                <div class='col-xs-8 col-xs-offset-2'>
-                    <h2>Hello Client,</h2>
-                    <br/>
-                    <p>After our conversation on {date}, I understood that you need a {new website} for {reason} that allows you to {feature} so that you can {benefit}.
-                        <br/>
-                        <br/>I have spent the last few days reviewing possible solutions and going through the example websites you mentioned.
-                        <br/>
-                        <br/> I have proposed two different design directions below. </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class='row'>
+          <div class='col-xs-8 col-xs-offset-2'>
+            <h2>Hello,</h2>
+            <br/>
+            <p> I’ve been working hard over the past 10 days trying to reimagine Beeminder so that it is easier to use. I have tried to redesign as little as possible, only changing things when the usability benefits outweigh the confusion of changing what
+              people are used to.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class='content'>
-        <div class="container">
-            <div class='row'>
-                <div class='col-xs-8 col-xs-offset-2'>
-                    <h2>Option 1</h2>
-                    <br/>
-                    <p>
-                        Please <big><u>click on any screenshot</u></big> for a demo.</p>
-                            <br/>
-                            <br/>
-                            <a href='#'>
-<img src='img/firstChoice.png' class="img-responsive firstChoice"/></a>
-<label for='firstChoice'><big>Option 1A:</big> This is my first choice of layout. The idea is to keep the design minimal and the typeface modern. A simple slider along the top for features and then list of videos along with a write up.</label>
-                        <br/>
-                        <br/>
-                    <h3>
-                                Stripping Audio, Archive pages, Sharing and Translation.
-                    </h3>
-                    <br/>
-                    <ul>
-                                <li>All these additional pieces of functionality can be achieved using plugins except audion stripping.
-                                </li>
-                                <li>
-                                Removing audio from movie files can be easily done with dedicated software. There are plenty fo free options to do this.
-                            </li>
-                            <li>
-                                The archive page might be a bit difficult to organise by day since most archive organise their content by month. One option I found that might be able to solve this problem looks <a href='http://www.prelovac.com/vladimir/archive-spec/'>like this</a>. Clicking on any of the dates then releases a drop down with all the posts for that day.
-                            </li>
-                            <li>
-                                Translating themes into hindi can be done but I have never done it before. Perhaps a more practical solution would be to create a seperate subsite in hindi and post hindi content to that site rather than trying to automatically translate content on the english site.
-                            </li>
-                    </ul>
-                    <br/>
-                    <br/>
+      <div class="container">
+        <div class='row'>
+          <div class='col-xs-8 col-xs-offset-2'>
+            <h3>Why Reimagine?</h3>
+            <br/>
+            <p> A sampling of pages from the current interface shows inconsistency in design elements across pages.</p>
 
-                </div>
-            </div>
+            <br/>
+            <a href='#'>
+              <img src='img/old.png' class="img-responsive firstChoice" />
+            </a>
+            <br/>
+            <p>The need for stronger visual hierarchy coupled the variation in typeface sizing and spacing makes the interface feel like a collection of design fixes and additions built up over time. </p>
+
+
+            <p>I have focused a single function for this proposal. Being able to sign up and commit money to a goal.</p>
+
+            <hr/>
+            <h2>Commiting Money to a Goal</h2>
+            <br/>
+            <a href='#'>
+              <img src='img/flow.png' class="img-responsive firstChoice" /></a>
+            <br/>
+            <p>
+              Rather than tryng to reduce the number of steps to simplify the process, I propose increasing the number of possible steps by making each steps shorter and clearer.
+              <p/>
+              <p>
+                I ran three twenty minute unbiased usability tests to set a baseline for the project. I gave each participant three tasks:
+              </p>
+              <ul>
+                <li>Task1: Sign up and commit to clearing out your inbox at least 4 days a week.</li>
+
+                <li>Task2: Sign up and commit to walking 10,000 steps at least 5 days a week.</li>
+
+                <li>Task3: Change your inbox commitment to 5 days a week.</li>
+              </ul>
+              <br/>
+              <p> 0 participants were able to complete all three tasks in 20 minutes. What's worse is that rather than just not being able to accomplish the tasks, one participant silently failed, believing she had connected her gmail account when she did
+                not </p>
+              <br/>
+              <p>I have put screen recordings of all three testing sessions into a dropbox available at the end of teh proposal, along with tester profiles and an executive summary.
+                <p/>
+
+                <p>The test revealed that the most salient problem with the user journey is that it forks at step 3 on the goal creation page.
+                  <p/>
+
+                  <p>Hick’s Law states that time it takes for a user to make a decision depends on the number of choices available — the higher the number the longer the decision time.
+                    <p/>
+
+                    <p>Giving users multiple options (to select a type of goal or connect a tracker service) before they understand the conventions of an interface is easily avoidable.
+                      <p/>
+                      <p>I have tried to minimise teh number of call to actions on each page by breaking up the sign up process into a simple progression of short steps. Further minimising potential errors by providing status indicators, an undo button and
+                        feedback about the progress on each step.</p>
+                      <br/>
+
+                      <a href='#'><img src='img/steps.png' class="img-responsive same" /></a>
+
+                      <p> I have fleshe dout teh detailf for each of these steps in teh deisgn proposal afetr teh next section.
+
+                        <br/>
+                        <br/>
+
+          </div>
         </div>
+      </div>
     </section>
 
     <section class='content'>
-        <div class="container">
-            <div class='row'>
-                <div class='col-xs-8 col-xs-offset-2'>
-                    <h2>Option 2</h2>
-                    <br/>
-                    <p>
-                        Again, please <big><u>click on any screenshot</u></big> for a demo of the site.</p>
-                    <br/>
-                        <br/>
-                        <a href='#'><img src='img/same.jpg' class="img-responsive same"/></a>
-                        <br/>
-                        <label for='same'><big>Option 2A:</big> If you don't like to first direction then this is a theme that closer matches your current design.</label>
-                        <br/>
-                            <br/>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class='row'>
+          <div class='col-xs-8 col-xs-offset-2'>
+            <h2>The Goal Page</h2>
+            <br/> Successfully signing up and commiting to provides users with the curret goal page.
+            <a href='#'><img src='img/goal.png' class="img-responsive same" /></a>
+            <br/>
+
+            <p>I've tried to reduce as many of the components on the page by coupling related functions together and providing a clearer sense fo hierarchyon teh page so that people knwo what tp look at first.</p>
+            <br/>
+
+            <a href='#'><img src='img/wire.png' class="img-responsive same" /></a>
+            <br/>
+            <p>Grouping relevant elemnets together and rearranging hierarchically also makes the site more accessible to keyboard only users people with vision impairments.
+              <p/>
+
+
+              <ol>
+                <li> Navigation: Clicking on the logo takes you home, the dashboard button button takes you to the dashboard and everything else is collapsed inside the settings button.</li>
+                <li> Progress Bar: Because the system is connected to a debit card, it is important to orientate users by explaining what is happening, what will happen, when it will happen and what they need to dp to prevent it from happening.</li>
+                <li>Deadlines : Retroratcheting and deadline adjustment can be accessed by clickingon teh coundown button.</li>
+                <li>Penalty Adjuster : Clicking on the amount button allows you to adjust your pledge.</li>
+                <li>Refresh : Ideally clicking on teh image would refresh the data, of thsi is not technically feasable then coulping teh refresh button with teh screen make makes it easier for the people who tabb through teh site the refresh data when they
+                  are accessing it.</li>
+                <li>Add Data: If a tracking service has not been setup then adding data because one of the primary reasons for using this page. Being able to add data on the goal page as well as 'quick add' on the dashboard minimizes teh time people need
+                  to spend looking for a way to add data to their goal</li>
+
+                <li>Automatic Tracking : Coupling this function just below data add component allow speople to discover what kinds of services tehy can connect fi they havn't already tried a data tracker. If a service is connected the thsi changes to 'Turn
+                  off automatic tracking'</li>
+                <li>Stop; Pausing and archiving goals can be done trhough a single stop thsi goal button. This provides a singel point of focus for people that are panicing and just want to stop everything.</li>
+                <li>Settings: All other page settings can be accessed through teh settinsg button.</li>
+                <li>technical indicators: Labelling all additional graphs 'technical' means that people who want additional information will be drawn to it and people who are intimidated by teh syetm will stay away from it.</li>
+                <li>Help; Using the footer for a single purpose menas that people know they can refer to teh footer when they have a problem. </li>
+
+
+                <p>This why I have tried to </p>
+                <br/>
+
+                <a href='#'><img src='img/technical.png' style='margin:0 auto' class="img-responsive same" /></a>
+                <br/>
+                <p>When usability testing teh site I added a fourth task:
+                </p>
+                <p>
+                  <strong>Task4</strong>: Cancel both commitments and deactivate your account.</p>
+                <p>
+                  Thsi task acnnot be completed. there is cirrently no way for someone to deactvate teh ccount. The reaosn I added this is is to see how long it would take someone to use the extensive FAQ and excellent support system you have developed.</p>
+
+                <p> The results indicates that because there are so many link in there are footer users fail to associate the footer with any relevant purpose. I propose to use the footer as a support panel by providing a single 'help button' taht redrect
+                  to a age with FAQ, Contact support and a link to teh forums. Other footer links match more conventional footer link names is that people who do use footers to use teh footer as a onventional footer are rediercted t teh appropriate location
+                  </p>
+
+                </li>
+
+                <ol>
+
+
+
+          </div>
         </div>
+      </div>
     </section>
 
     <section class='content'>
-        <div class="container">
-            <div class='row'>
-                <div class='col-xs-8 col-xs-offset-2'>
-                    <h2>Costs and Timeline</h2>
-                    <br/>
-                    <p>My pricing structure is as follows.
-                        <br/>
-                        <br/>
-                        <table class="table table-hover">
-                        <thead>
-        <tr>
-          <th></th>
-          <th>8 Weeks</th>
-          <th>1 Month</th>
-          <th>10 Days</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Design</th>
-          <td>.5x</td>
-          <td>x</td>
-          <td>2x</td>
-        </tr>
-        <tr>
-          <th scope="row">Development</th>
-          <td>.5x</td>
-          <td>x</td>
-          <td>2x</td>
-        </tr>
-        <tr>
-          <th scope="row">Copywriting</th>
-          <td>.5x</td>
-          <td>x</td>
-          <td>2x</td>
-        </tr>
-        <tr>
-          <th scope="row">Setup</th>
-          <td>.5x</td>
-          <td>x</td>
-          <td>2x</td>
-        </tr>
-        <tr>
-          <th scope="row">TOTAL</th>
-          <td>.5x</td>
-          <td>x</td>
-          <td>2x</td>
-        </tr>
-      </tbody>
-    </table>
+      <div class="container">
+        <div class='row'>
+          <div class='col-xs-8 col-xs-offset-2'>
+            <h2>DESIGN PROPOSAL</h2>
+            <a href='#'><img src='img/sign.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step1.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step2.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step3.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step4.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step5.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step6.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step7.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step8.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step9.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/step10.png' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/laptop.png' style='margin: 0 auto;' class="img-responsive same" /></a>
+            <br/>
+            <a href='#'><img src='img/screens.png' class="img-responsive same" /></a>
 
-    <br/> If there is no design, no development and no writing involved in this project. You will just be installing a wordpress template. All you have to pay for is the theme (approximately x) setup charges(y). This includes one year of hosting at 512MB Memory,
-1 Core Processor, 20GB SSD Disk and 1TB Transfer. You will need to cover any traffic above this base amount.
-<br/>
-<br/>
-If you would like me involved beyond installing a wordpress theme we can this on an hourly basis. I usually charge x per hour.
-  </p>
-                </div>
-            </div>
+            USING CURRENT THE CURRENT GRAPH
+
+            <p>Another great universal design principle we love is Fitts’s Law, which essentially says that the time required to move and interact with a target area is a function of the distance and size of the target. The closer and larger the target,
+              the faster the action. This is why we have increased the size of many UI elements, such as form fields, buttons, cards and links. Overall, it improves general usability (Fitts’s Law) and ease of use in touch-enabled platforms.</p>
+            <br/>
+            <br/>
+
+            <a href='#'><img src='img/oldgoal.png' class="img-responsive same" /></a>
+
+            <p>TWO TYPFACES</p>
+
+            <p>The display font is Trueno Semi Bold. I wanted to select a typeface that was almost indistinguishle from you current logo typeface. I chose Trieno because of all teh options I shortlisted, this typeface’s letterforms had teh most space inside
+              each of teh letters. Wide apertures and the large counterforms result make a text more readable.</p>
+
+            <p>Because there is a lot of text block on your website I searched for a typeface that readable in large blocks of text. It needed to match the display type but it also needed to work as in all caps.</p>
+
+            <a href='#'><img src='img/type.png' class="img-responsive same" /></a>
+            <br/>
+
+            <p>COLOURS</p>
+
+            <p>I've used the slightest hint of orange and green for success and danger notifiers but otehrwise I have stuck to a Monochromatic colour palette. </p>
+
+            <a href='#'><img src='img/colour.png' class="img-responsive same" /></a>
+
+            <p>For most part, color is associated with specific actions: error states, primary and secondary button press responses and controls. This makes these prominent and distinguishable from other surrounding elements without relying on colour for
+              teh site to make sense
+              <p/>
+
+              <p>Using color sparingly, and with a defined and limited purpose means you the site can be used just as easily with a vision impairments.
+                <p/>
+
+                <a href='#'><img src='img/bw.png' class="img-responsive same" /></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class='content'>
-        <div class="container">
-            <div class='row'>
-                <div class='col-xs-8 col-xs-offset-2'>
-                    <h2>Next Steps</h2>
-                    <br/>
-                    <p>I don't think it will take more than a week from when you provide the content for this to be setup.
-                        <br/>
-                        <br/> Please let me know if you like any of the themes and if you woudl like me to set one up for you.</p>
-                        <br/>
-                        <br/>
-                </div>
-            </div>
+      <div class="container">
+        <div class='row'>
+          <div class='col-xs-8 col-xs-offset-2'>
+            <h2>Costs and Timeline</h2>
+            <p>This proposal is deisgned as a starting point. The idea is to use your reaction to the dierction I am proposing as a way to build a clear brief for the project. I need to understand what you wwant fo rteh interface, what your concerns are,
+              what kinds of design boundaries there are and limitations are on handling them.</p>
+
+            <br/>I did not test the new interface and compare the results to teh baselien because I relaise there is probably not going to looka anything like I am proposing. I wanted to show you that there are usablility problems, and I wnated to show you
+            how I would address these.
+
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class='content'>
+      <div class="container">
+        <div class='row'>
+          <div class='col-xs-8 col-xs-offset-2'>
+
+            <br/>
+            <p> If you like the general design approach I have taken and you would like me to continue working on teh project estimate that it will take approximately 8 weeks to redeisgn you entire system. This woudl involve an initial convertsation with
+              beeminder where gather feedback on teh proposal, listen to requirements and build an understanding of th brief for teh project. I will then Flowcharts for each possible user journey on teh website. One you are happy with Flowcharts I will
+              tstart working on teh first round of wirframes, starting woth teh most critical user journeys first. I'm assuming teher will be 2-3 revisions on this process. Once you are happy with teh wireframes then I will start working on the final
+              deisgns. I willshare deisgns as tehy are completed so that global changes can be made as early in teh deisgn process as possible. Once teh final deisgns are completed you will have two deisgn revisions. One for major changes nd one for minor
+              changes and finishing work. The cost thsi work is as follows. You do NOT have to go for the entire package, you are wekcome to pick and match any any of teh deiverable. If you decide to pmove for ward the cost of thisproposal will be deducted
+              for the follwoing amounts.
+
+              <br/>
+              <br/>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>DELIVERABLE</th>
+                    <th>COST</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Flowcharts and Wireframes</th>
+                    <td>$1250</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">UI Design</th>
+                    <td>$1250</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">Logo and custom desgn components </th>
+                    <td>$1250</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">Total</th>
+                    <td>$3750</td>
+
+                  </tr>
+
+                </tbody>
+              </table>
+              <p>
+                For sutom deisgncomponenst I have just octicons for teh proposal. I dont think you need to redeisgn you r logo but just incase it was something you want to do I wanted to putthe option onn the table. Custom conmponents would include a new graphical language
+                used across the site to indicate different types of content (symbols), actions and controls (icons), and even achievements (badges). Adding thsi option in will not take any longer because these will be deisgned in parallel an=s Iw ill
+                be working with another deisgn agencies. If this interest you I can put together another roposal just liek thsi one jsut for teh logo an dcustom components designs. It will cost teh same as this porposal, it will take 2 weeks to deliver
+                and teh cost of teh porposal will be deducted form teh project if you deisgn to move forward with the deisgn work.
+
+
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='content'>
+      <div class="container">
+        <div class='row'>
+          <div class='col-xs-8 col-xs-offset-2'>
+            <h2>Next Steps</h2>
+            <br/>
+            <p>Please take as long as you need to think through this. I propose we get on a skype call at a time that works for you at some point in teh coming week. I am currently +5:30 GMT which is ahead. Some time between 8- 12 in the morning your time
+              would be ideal for me.
+              <br/>
+              <br/> If absolutely anything was unclear -lease just email me and I will repsond as soon as possible. I hope you enjoyed teh proposala nd thank you for giving me teh opoportunity to work on this.</p>
+            <br/>
+            <br/>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class='signature'>
-        <div class="container">
-            <div class='row'>
-                <div class='col-xs-8 col-xs-offset-2'>
-                    <img src='img/signature.png'/>
-                    <br/>
-                    <br/>
+      <div class="container">
+        <div class='row'>
+          <div class='col-xs-8 col-xs-offset-2'>
+            <img src='img/signature.png' />
+            <br/>
+            <br/>
 
-                    <p><big>Name</big>
-                        <br/>
-                        <br/>Designation
-                        <br/>
-                        <br/>Contact</p>
-                </div>
-            </div>
+            <p><big>Name</big>
+              <br/>
+              <br/>Designation
+              <br/>
+              <br/>Contact</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class='colorBox'>
@@ -221,12 +364,12 @@ If you would like me involved beyond installing a wordpress theme we can this on
       <div class='orange'></div>
       <div class='blue'></div>
       <div class='lightBlue'></div>
-  </section>
+    </section>
 
 
 
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</body>
+  </body>
 
 </html>

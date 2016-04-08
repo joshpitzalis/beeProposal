@@ -39,32 +39,37 @@
       <div class="container">
         <div class='row'>
           <div class='col-xs-8 col-xs-offset-2'>
-            <h2>Hello,</h2>
+            <h2>Hello Beeminder,</h2>
             <br/>
-            <p>I have been working hard over the past ten days to redesign Beeminder. My goal is to help people who are new to the concept of self quantification and commitment tracking.</p>
+            <p>My goal for the proposed redesign is to help people who are new to the concept of self quantification and commitment tracking.</p>
 
-            <p>This proposal is only meant to be a starting point. I do not know what the goals and problem cases are for Beeminder. The idea is build a brief for the project by using your reactions to this presentation.</p>
+            <p>This proposal is only meant to be a starting point. I do not know what your goals and problem cases are. The idea is build a brief for the project based on your reactions to this presentation.</p>
 
-            <p>The problem case driving this proposal is that I cannot share Beeminder with my friends. They either do not understand what it does or they are too intimidated to use it. </p>
+            <p>The problem case driving this proposal is that I cannot share Beeminder with my friends. They either do not understand what it does or they are too intimidated to use it.</p>
 
             <p>My point of view is biased. To make a stronger case I ran three twenty-minute usability tests to set a baseline for the project. I used TryMyUI.com for as unbiased an opinion as possible, given the time frame.</p>
 
             <p>Each participant had three tasks:</p>
+            <br/>
             <ul>
 
 
               <li>Task 1: Sign up and commit to clearing out your Gmail inbox at least 4 days a week.</li>
 
-              <li>Task2: Sign up and commit to walking 10,000 steps at least 5 days a week.</li>
+              <li>Task 2: Sign up and commit to walking 10,000 steps at least 5 days a week.</li>
 
-              <li>Task3: Change your inbox commitment to 5 days a week.</li>
+              <li>Task 3: Change your inbox commitment to 5 days a week.</li>
             </ul>
+<br/>
+            <p>None of the participants were able to complete all three tasks in 20 minutes.</p>
 
-            <p>0 participants were able to complete all three tasks in 20 minutes.</p>
+            <p>Instead of just ailing to accomplish the tasks, one participant silently failed. She believed she connected her Gmail account when she had not.</p>
 
-            <p>Instead of not accomplish the tasks, one participant silently failed. She believed she had connected her Gmail account when she had not.</p>
+              <p>Screen recordings of all three testing sessions at the are avaulable <a href='https://www.dropbox.com/sh/xmnu5sqmwq3wbsr/AABQxnC0lxaHf9rArsumYXvka?dl=0'>here</a>. I have also included tester profiles and an executive summary.</p>
 
-            <p>I have linked to a dropbox with screen recordings of all three testing sessions at the end of the proposal. I have also included tester profiles and an executive summary.</p>
+              <p>
+                I have focused on a single user journey in this proposal: Being able to sign up and commit money to a goal.
+                <p/>
           </div>
         </div>
       </div>
@@ -75,10 +80,10 @@
         <div class='row'>
           <div class='col-xs-8 col-xs-offset-2'>
 
-            <h2>COMMITTING MNEY TO A GOAL</h2>
+            <h2>COMMITTING MONEY TO A GOAL</h2>
             <br/>
-            <p>
-              I have focused a single user journey in this proposal: Being able to sign up and commit money to a goal.
+
+            <p>This is a flowchart of the current user journey to sign up and commit to a goal.
               <p/>
               <a href='#'>
                 <img src='img/flow.png' class="img-responsive firstChoice" /></a>
@@ -90,16 +95,16 @@
 
               <p> I suggest reducing options until users understand the conventions of the interface.</p>
 
-              <p>You could also avoid potential errors by providing status indicators. As well as an undo button and feedback about the progress on each step.
+              <p>You could also avoid potential errors by providing status indicators, an undo button and feedback about the progress on each step.
                 <p/>
 
-                <p>I also added a thank you to confirm completion.
+                <p>I also added a 'thank you' to confirm completion.
                   <p/>
 
                   <br/>
                   <a href='#'><img src='img/steps.png' class="img-responsive same" /></a>
                   <br/>
-                  <p>The final screens for each of these steps are in the design proposal after the next section. </p>
+                  <p>The final screens for each of these steps are in the design proposal after the next section. The next section will explains the thinking behind the changes I am proposing first.</p>
 
                   <br/>
                   <br/>
@@ -126,11 +131,11 @@
               <li>What they need to do to prevent it from happening.</li>
             </ul>
 
-            <p>This layout also allows keyboard-only users and people with vision impairments better access.</p>
+            <p>This layout also allows better access to keyboard-only users and people with vision impairments.</p>
 
 
             <br/>
-            <a href='#'><img src='img/wire.png' class="img-responsive same" /></a>
+            <a href='#'><img src='img/wireframe.png' class="img-responsive same" /></a>
             <br/>
 
             <ol>
@@ -140,16 +145,16 @@
 
               <li>Progress Bar: The product works best when connected to a debit card. What people need to do to not be charged should be obvious. I have not spent much time on the wording, I'm sure it will change, I was just trying to make a point.</li>
 
-              <li>Deadlines : Retro-ratcheting and deadlines can changed by clicking on the countdown button.</li>
+              <li>Deadlines: Retro-ratcheting and deadlines can changed by clicking on the countdown button.</li>
 
               <li>Penalty Adjuster : Clicking on the amount button allows you to adjust your pledge.</li>
 
-              <li>Refresh : Placing the refresh button beside the graph makes it easier for people to view the latest data when they tab through the page.</li>
+              <li>Refresh: Placing the refresh button beside the graph makes it easier for people to view the latest data when they tab through the page.</li>
 
               <li>Add Data: If data is not tracked automatically, adding data becomes one of the primary reasons to use this page. Adding data from the goal page, as well as 'quick add' on the dashboard, minimises the time people need to spend looking for
                 a way to add data to the goal.</li>
 
-              <li>Automatic Tracking : If a service is connected during setup then this changes to 'Turn off automatic tracking'.</li>
+              <li>Automatic Tracking: If a service is connected during setup then this changes to 'Turn off automatic tracking'.</li>
 
               <li>Stop: Pausing and archiving goals can be done through a single 'stop this goal' button. This provides a single point of focus for any kind of interruption.</li>
 
@@ -163,16 +168,17 @@
               <li>
                 <p>Help: When usability testing the site I added a fourth task:</p>
                 <ul>
-                  <li>Task 4: Cancel both commitments and deactivate your account.</li>
+                  <li>I asked them to cancel both commitments and deactivate their account.</li>
                 </ul>
                 <br/>
 
-                    <p>This task cannot be completed. There is currently no way for someone to deactivate the account. The reason I added this is to see how long it would take someone to use the your extensive FAQ and excellent support system.</p>
+                    <p>This task cannot be completed. There is currently no way for someone to deactivate their account. The reason I added this is to see how long it would take someone to use the your extensive FAQ and excellent support system.</p>
 
-                    <p>The results suggest that because there are too many links in the footer. Users fail to associate the footer with any relevant purpose. </p>
+                    <p>The results suggest that because there are too many links in the footer users fail to associate the footer with a relevant purpose. </p>
 
-                    <p>Prioritising the footer for one purpose means that people know they can refer to the footer when they have a problem. The other link have been collapsed into more conventional link names that people are used to seeing in footers. Sticking
-                      to conventions where possible reduces the time it takes for people to find what they are looking for.</p>
+                    <p>Prioritising the footer for one purpose means that people know they can refer to the footer when they have a problem. The other links have been collapsed into more conventional link names that people are used to seeing in footers. Sticking to conventions where possible reduces the time it takes for people to find what they are looking for.</p>
+
+                      <p>Screen recordings of all three testing sessions at the are avaulable <a href='https://www.dropbox.com/sh/xmnu5sqmwq3wbsr/AABQxnC0lxaHf9rArsumYXvka?dl=0'>here</a>. I have also included tester profiles and an executive summary.</p>
           </div>
         </div>
       </div>
@@ -212,7 +218,7 @@
             <h2>USING THE CURRENT GRAPHS</h2>
 
             <p>Things that do a good job of solving complex problems are usually complicated. </p>
-            <p>Your graphs complexity is key because it communicates a huge amount of useful information. </p>
+            <p>Your graph's complexity is key because it communicates a huge amount of useful information. </p>
             <p>Sacrificing features for white space makes no sense when each feature solves a use case that someone cares about.</p>
             <p>I made sure that the redesign works with the old graphs.</p>
             <br/>
@@ -224,7 +230,7 @@
     <p>My only suggestion at this point would be to match the typeface to the new interface. </p>
       <p>Casually testing the interface, I found friends were sometimes way ahead of their goal but they thought they were off track because they were not on the yellow brick road. Adding a light green and red highlight to the backgrounds on either side of the yellow line would help make the graph easier to understand.</p>
       <br/>
-            <h2>TWO TYPFACES</h2>
+            <h2>TWO TYPEFACES</h2>
 
             <p>The display font is Trueno Semi Bold. I wanted to select a typeface that was indistinguishable from you current logo typeface. I chose Trueno because, of all the options I shortlisted, Trueno letterforms had the most space inside the letters. Wide apertures and the large counterforms make a text more readable.</p>
 
@@ -235,19 +241,21 @@
 
             <h2>COLOURS</h2>
 
+            <a href='#'><img src='img/colour.png' class="img-responsive same" /></a>
 
 
             <p>Roughly 5% of the population are colour blind and over 60% do not have 20/20 vision. For this reason I have picked the highest contrast yellow and black combination I could find.</p>
 
-            <p>I've used slight hints of orange and green for success and danger notifiers but otherwise I have stuck to a monochromatic colour palette.</p>
+            <p>For most part, colour is associated with specific actions: error states, primary and secondary button press responses and controls.</p>
+
+            <p>I've used slight hints of orange and green for success and danger notifiers but otherwise I have stuck to a monochromatic colour palette. This means you never rely on colour for the site to make sense.</p>
+
             <br/>
-              <a href='#'><img src='img/colour.png' class="img-responsive same" /></a>
 
-            <p>For most part, colour is associated with specific actions: error states, primary and secondary button press responses and controls. </p>
+            <a href='#'><img src='img/bw.png' class="img-responsive same" /></a>
 
-            <p>This makes things that need your attention prominent and distinguishable without relying on colour for the site to make sense.</p>
 
-                <a href='#'><img src='img/bw.png' class="img-responsive same" /></a>
+
           </div>
         </div>
       </div>
@@ -258,17 +266,18 @@
         <div class='row'>
           <div class='col-xs-8 col-xs-offset-2'>
             <h2>DELIVERABLES, COSTS AND TIME FRAME</h2>
-            <p>I have not tested the proposed interface and compared it to the baseline because I assume the final product won't look anything like what I am proposing.</p>
 
-            <p>I wanted to show you that there are usability problems, and I wanted to demonstrate how I would address them. </p>
+            <p>I have not tested the proposed interface because I assume the final product will not look anything like what I have proposed.</p>
+
+            <p>I only wanted to show you that there are usability problems, and I wanted to demonstrate how I would address them.</p>
 
             <p>For me to begin work, I need to understand what you want from the redesign, what your concerns are, what you current users concerns are, what kinds of design boundaries there are and the limitations to handling them.</p>
 
-              <p>To make sure we were building the thing right I would love to involve the incredible community you have built around beeminder. Testing new design on a small group of existing users, in addition to new users, to get the most feedback possible.</p>
+              <p>To make sure we were building the thing right I would love to involve the incredible community you have built around beeminder. Testing new design on a small group of existing users, and to new users, to get the most relevant feedback possible.</p>
 
-                <p>If you like my approach and you would like me to continue working on the project estimate that it will take 8 weeks to redesign your interface. </p>
+                <p>If you like my approach and  would like me to continue working on the project, I estimate that it will take 8 weeks to redesign your interface. </p>
 
-                  <p>If you only want me to work on flowcharts and wireframes then it will only take 5 weeks. </p>
+                  <p>If you only want me to work on flowcharts and wireframes then it will take 5 weeks. </p>
 
                     <p>Pricing structure:</p>
 
@@ -293,7 +302,7 @@
 
                   </tr>
                   <tr>
-                    <th scope="row">Logo and custom desgn components </th>
+                    <th scope="row">Logo and custom design components </th>
                     <td>$1250</td>
 
                   </tr>
@@ -306,15 +315,15 @@
                 </tbody>
               </table>
               <p>
-                Custom components would include a new graphical language used across the site to indicate different types of content (symbols), actions and controls (icons), and achievement and danger symbols (badges) and a collection default user icons in custom design.
+                Logo and custom design components would include a new graphical language used across the site to indicate different types of content (symbols), actions and controls (icons), achievement and warning symbols (badges) and a collection of default user icons.
               </p>
 
               <p>
-                Adding this option in will not take any longer because these will be designed in parallel with the UI as I will be collaborating with another design agency.
+                Adding this option in will not take any longer because these will be designed in parallel with the UI. I woudlhave to collaborate with a design agency for the logo design section.
               </p>
 
               <p>
-                If this interest you I can put together another proposal  just for the logo an custom components designs. It will cost the same as this proposal, it will take 2 weeks to deliver and the cost of the proposal will be deducted from the project if you decide to move forward with the design work.
+                If this interests you, I can put together another proposal just for the logo and custom design components. It will cost the same as this proposal, it will take 2 weeks to deliver and the cost of the proposal will be deducted from the project if you decide to move forward with the design work.
               </p>
           </div>
         </div>
@@ -328,7 +337,7 @@
             <h2>NEXT STEPS</h2>
             <br/>
             <p>Please take as long as you need to think through this. </p>
-            <p>If you would like to move forward I propose we get on a Skype call at a time that works for you at some point in the coming week. I am currently +5:30 GMT which is ahead. Some time between 8- 12 in the morning your time would be ideal for me. </p>
+            <p>If you would like to move forward I suggest we get on a Skype call some time next week. I am currently in India (+5:30 GMT). Some time between 8 - 12 in the morning your time would be ideal for me. </p>
               <p>If anything was unclear please email me and I will respond as soon as possible. </p>
 
                 <p>I hope you enjoyed the proposal and thank you for giving me the opportunity to work on this.</p>
@@ -349,7 +358,7 @@
 
             <p><big>Joshua Pittman Pitzalis</big>
               <br/>
-              <br/>Designer
+              <br/>UI Designer
               <br/>
               <br/>joshpitzalis@gmail.com</p>
           </div>
